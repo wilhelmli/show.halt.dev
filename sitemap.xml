@@ -1,11 +1,5 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://halt.dev/demoevent.html</loc>
-	</url>
-	<url>
-		<loc>https://halt.dev/page15.html</loc>
-	</url>
-	<url>
 		<loc>https://halt.dev/previous.html</loc>
 	</url>
 	<url>
@@ -28,5 +22,17 @@
 	</url>
 	<url>
 		<loc>https://halt.dev/index.html</loc>
+	</url>
+	<url>
+		<loc>https://halt.dev/amieegao.html</loc>
+	</url>
+	<url>
+		<loc>https://halt.dev/randomgu.html</loc>
+	</url>
+	<url>
+		<loc>https://halt.dev/gnms-cton2022.html</loc>
+	</url>
+	<url>
+		<loc>https://halt.dev/cyor-2019.html</loc>
 	</url>
 </urlset>
