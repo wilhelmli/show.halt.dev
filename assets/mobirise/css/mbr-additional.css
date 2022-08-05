@@ -10820,7 +10820,7 @@ a {
 }
 .cid-tdCq5B6pIz {
   padding-top: 0rem;
-  padding-bottom: 0rem;
+  padding-bottom: 4rem;
   background-color: #000000;
 }
 @media (max-width: 991px) {
@@ -10846,100 +10846,16 @@ a {
 .cid-tdCq5B6pIz .mbr-section-title {
   color: #ffffff;
 }
-.cid-tdCq5Bo9Y9 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.cid-tdCFLftkbO {
+  padding-top: 2rem;
+  padding-bottom: 8rem;
   background-color: #000000;
 }
-.cid-tdCq5Bo9Y9 .mbr-section {
-  text-align: center;
-  color: #fff;
+.cid-tdCFLftkbO .mbr-text {
+  color: #ffffff;
 }
-.cid-tdCq5Bo9Y9 .carousel {
-  margin: 30px 0;
-  background: #000000;
-}
-.cid-tdCq5Bo9Y9 .carousel .item {
-  text-align: center;
-  overflow: hidden;
-  height: 475px;
-}
-.cid-tdCq5Bo9Y9 .item img {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
-.cid-tdCq5Bo9Y9 .carousel .carousel-control {
-  width: 50px;
-  height: 50px;
-  background: #000;
-  margin: auto 0;
-  opacity: 0.8;
-}
-.cid-tdCq5Bo9Y9 .carousel .carousel-control:hover {
-  opacity: 0.9;
-}
-.cid-tdCq5Bo9Y9 .carousel .carousel-control i {
-  font-size: 41px;
-  margin-top: 3px;
-}
-.cid-tdCq5Bo9Y9 .carousel-caption h3,
-.cid-tdCq5Bo9Y9 .carousel-caption p {
-  color: #fff;
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  text-shadow: none;
-  margin-bottom: 20px;
-}
-.cid-tdCq5Bo9Y9 .carousel-caption h3 {
-  background: #000000;
-  padding: 12px 24px;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-.cid-tdCq5Bo9Y9 .carousel-caption p {
-  background: #7f1933;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-weight: 300;
-}
-.cid-tdCq5Bo9Y9 .carousel-indicators {
-  margin-top: 0px;
-  position: relative;
-  background: #ccc;
-}
-.cid-tdCq5Bo9Y9 .carousel-indicators div.active {
-  background: #bbbbbb;
-  border-color: #bbbbbb;
-}
-.cid-tdCq5Bo9Y9 .carousel .nav {
-  background: #eee;
-}
-.cid-tdCq5Bo9Y9 .carousel .nav a {
-  color: #333;
-  border-radius: 0;
-  font-size: 85%;
-  padding: 10px 16px;
-  background: transparent;
-}
-.cid-tdCq5Bo9Y9 .carousel .nav .active a {
-  color: #fff;
-  background: #bbbbbb;
-}
-.cid-tdCq5Bo9Y9 .carousel .nav strong {
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  font-size: 110%;
-  text-transform: uppercase;
-}
-@media only screen and (max-width: 600px) {
-  .cid-tdCq5Bo9Y9 .carousel-indicators {
-    display: none;
-  }
-}
-.cid-tdCq5Bo9Y9 DIV {
-  color: #000000;
-  text-align: right;
+.cid-tdCFLftkbO .mbr-section-subtitle {
+  color: #ffffff;
 }
 .cid-tdCq5C5paQ {
   padding-top: 1rem;
