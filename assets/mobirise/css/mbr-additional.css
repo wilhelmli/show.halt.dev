@@ -4151,7 +4151,7 @@ a {
   text-align: left;
 }
 .cid-taS72c5HH8 {
-  padding-top: 4rem;
+  padding-top: 8rem;
   padding-bottom: 0rem;
   background-color: #000000;
 }
@@ -4364,6 +4364,9 @@ a {
 .cid-sftxkBR4Yt .navbar-dropdown {
   position: relative !important;
 }
+.cid-sftxkBR4Yt .navbar-dropdown {
+  position: absolute !important;
+}
 .cid-sftxkBR4Yt .dropdown-item:before {
   font-family: Moririse2 !important;
   content: "\e966";
@@ -4459,8 +4462,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #000000;
+  background: rgba(0, 0, 0, 0);
 }
 .cid-sftxkBR4Yt .navbar.opened {
   transition: all 0.3s;
@@ -9429,6 +9431,71 @@ a {
 }
 .cid-tbV4YgE8Y6 .mbr-text,
 .cid-tbV4YgE8Y6 .mbr-section-btn {
+  color: #bbbbbb;
+}
+.cid-teGTvVAiwN {
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  background-color: #000000;
+}
+.cid-teGTvVAiwN img,
+.cid-teGTvVAiwN .item-img {
+  width: 100%;
+}
+.cid-teGTvVAiwN .item:focus,
+.cid-teGTvVAiwN span:focus {
+  outline: none;
+}
+.cid-teGTvVAiwN .item {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cid-teGTvVAiwN .item-wrapper {
+  position: relative;
+  border-radius: 4px;
+  background: #4e4e4e;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (min-width: 992px) {
+  .cid-teGTvVAiwN .item-wrapper .item-content {
+    padding: 2rem 2rem 0;
+  }
+  .cid-teGTvVAiwN .item-wrapper .item-footer {
+    padding: 0 2rem 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-teGTvVAiwN .item-wrapper .item-content {
+    padding: 1rem 1rem 0;
+  }
+  .cid-teGTvVAiwN .item-wrapper .item-footer {
+    padding: 0 1rem 1rem;
+  }
+}
+.cid-teGTvVAiwN .mbr-section-btn {
+  margin-top: auto !important;
+}
+.cid-teGTvVAiwN .mbr-section-title {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-teGTvVAiwN .mbr-text,
+.cid-teGTvVAiwN .mbr-section-btn {
+  text-align: left;
+  color: #bbbbbb;
+}
+.cid-teGTvVAiwN .item-title {
+  text-align: left;
+  color: #ffffff;
+}
+.cid-teGTvVAiwN .item-subtitle {
+  text-align: left;
+  color: #bbbbbb;
+}
+.cid-teGTvVAiwN .mbr-section-subtitle {
+  text-align: left;
   color: #bbbbbb;
 }
 .cid-tbV0k06p9j {
