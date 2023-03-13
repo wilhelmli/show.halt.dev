@@ -39,9 +39,6 @@
 		<loc>https://halt.dev/artworks-2010s.html</loc>
 	</url>
 	<url>
-		<loc>https://halt.dev/artworks.html</loc>
-	</url>
-	<url>
 		<loc>https://halt.dev/gnms-cton2022.html</loc>
 	</url>
 	<url>
@@ -57,12 +54,18 @@
 		<loc>https://halt.dev/jinyu.html</loc>
 	</url>
 	<url>
-		<loc>https://halt.dev/cton-2023.html</loc>
-	</url>
-	<url>
 		<loc>https://halt.dev/cton.html</loc>
 	</url>
 	<url>
 		<loc>https://halt.dev/daleyang.html</loc>
+	</url>
+	<url>
+		<loc>https://halt.dev/cton-onair.html</loc>
+	</url>
+	<url>
+		<loc>https://halt.dev/cton-express.html</loc>
+	</url>
+	<url>
+		<loc>https://halt.dev/cton-cfos.html</loc>
 	</url>
 </urlset>
