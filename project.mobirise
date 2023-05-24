@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Show | HALT CREATION",
-    "currentPage": "cton.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -92,7 +92,7 @@
       }
     ],
     "imageResize": false,
-    "uniqCompNum": 435,
+    "uniqCompNum": 436,
     "versionPublish": "5.8.4",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -4815,6 +4815,233 @@
         {
           "alias": false,
           "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@fullWidth)": {
+              ".text-wrapper": {
+                "padding": "1rem"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            "img": {
+              "width": "100%"
+            },
+            "@media (min-width: 992px)": {
+              ".text-wrapper": {
+                "padding": "2rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#bbbbbb"
+            },
+            ".mbr-description": {
+              "text-align": "left",
+              "color": "#bbbbbb"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "image1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://player.bilibili.com/player.html?aid=698990316&bvid=BV1Qm4y1t73f&cid=1140147094&page=1&as_wide=1&high_quality=1&danmaku=0\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div style=\"position: relative; padding: 30% 45%;\">\n<iframe style=\"position: absolute; width: 100%; height: 100%; left: 0; top: 0;\" src=\"https://player.bilibili.com/player.html?aid=698990316&bvid=BV1Qm4y1t73f&cid=1140147094&page=1&as_wide=1&high_quality=1&danmaku=0\" frameborder=\"no\" scrolling=\"no\"></iframe>\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <a href=\"cton.html\"><img src=\"@PROJECT_PATH@/assets/images/asset-21.png\" alt></a>\n                    <p class=\"mbr-description mbr-fonts-style pt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">汽车前杠，专利号202130827550.1；汽车侧裙，专利号202130827550.2；汽车后小包，专利号202130827550.3</p>\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\"><b>电矩狂魔™ CTON</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">在2022年，电矩狂魔通过结合艺术与餐饮场所，在中国核心商圈小规模地进行了一场商业实验。融合夜生活与艺术展览，电矩狂魔以“夜间展览”的理念与广州、深圳中心地段的夜店、鸡尾酒吧与咖啡馆展开合作，以渗透城市景观，成为人们文化生活图景的一部分的方式。<br><br>Since 2022, 电矩狂魔™ CTON has initiated a series of commercial experiments across China's most central districts. 电矩狂魔™ CTON is a celebration of nightlife and contemporary art, a cultural symbol across galleries, clubs, cocktail bars, auto shops, and cafes, bringing a brand new dynamic art experience to the audience.&nbsp;</p>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "image1-c3",
+          "_isUserblock": true,
+          "_cid": "tF9jjxB674",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "img": {
+              "width": "120px",
+              "margin": "auto"
+            },
+            ".card": {
+              "transition": "all 0.3s",
+              "height": "fit-content",
+              "padding": "1rem 0",
+              "opacity": "0.7",
+              "margin-bottom": "1rem"
+            },
+            "@media (min-width: 992px)": {
+              ".card": {
+                "max-width": "10%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".card": {
+                "width": "50%!important"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#bbbbbb"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#bbbbbb"
+            }
+          },
+          "_name": "clients1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"clients1\" group=\"Clients\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"24\" value=\"15\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Brand Partners</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">合作伙伴</h4>\n            <p class=\"mbr-text mbr-fonts-style align-center mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                Click on an image in this block to replace it. Set the number of logos in Block Parameters. </p>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"col-md-3 card\">\n                <img src=\"@PROJECT_PATH@/assets/images/ta-press-0016-layer-3-2-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"@PROJECT_PATH@/assets/images/discovery-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"@PROJECT_PATH@/assets/images/nsm-1.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"@PROJECT_PATH@/assets/images/cdp-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"@PROJECT_PATH@/assets/images/tencent-music-300x300.png\" alt=\"Mobirise Website Builder\">\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"@PROJECT_PATH@/assets/images/takara-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"@PROJECT_PATH@/assets/images/spotify-1-240x240.png\" alt=\"Mobirise Website Builder\">\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"@PROJECT_PATH@/assets/images/netease-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 8\">\n                <img src=\"@PROJECT_PATH@/assets/images/ta-press-0019-youtube-1.png-2-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 9\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 10\">\n                <img src=\"@PROJECT_PATH@/assets/images/xpeng-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 11\">\n                <img src=\"@PROJECT_PATH@/assets/images/oppo-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 12\">\n                <img src=\"@PROJECT_PATH@/assets/images/nike-1-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 13\">\n                <img src=\"@PROJECT_PATH@/assets/images/herschel-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 14\">\n                <img src=\"@PROJECT_PATH@/assets/images/levis-1-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 15\">\n                <img src=\"@PROJECT_PATH@/assets/images/spotify-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 16\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 17\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 18\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 19\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 20\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 21\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 22\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 23\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 24\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n        \n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "clients1-bx",
+          "_isUserblock": true,
+          "_cid": "tEeiwOFegT",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "img": {
+              "width": "120px",
+              "margin": "auto"
+            },
+            ".card": {
+              "transition": "all 0.3s",
+              "height": "fit-content",
+              "padding": "1rem 0",
+              "opacity": "0.7",
+              "margin-bottom": "1rem"
+            },
+            "@media (min-width: 992px)": {
+              ".card": {
+                "max-width": "10%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".card": {
+                "width": "50%!important"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#bbbbbb"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#bbbbbb"
+            }
+          },
+          "_name": "clients1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"clients1\" group=\"Clients\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"24\" value=\"1\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Event Partners</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">活动支持</h4>\n            <p class=\"mbr-text mbr-fonts-style align-center mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                Click on an image in this block to replace it. Set the number of logos in Block Parameters. </p>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"col-md-3 card\">\n                <img src=\"@PROJECT_PATH@/assets/images/cton-expo-wht-bg.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"@PROJECT_PATH@/assets/images/cton-express-outline-wht.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"@PROJECT_PATH@/assets/images/cfos-campus-wht.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"@PROJECT_PATH@/assets/images/on-air-by-cton-outline-wht.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"@PROJECT_PATH@/assets/images/tencent-music-300x300.png\" alt=\"Mobirise Website Builder\">\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"@PROJECT_PATH@/assets/images/takara-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"@PROJECT_PATH@/assets/images/spotify-1-240x240.png\" alt=\"Mobirise Website Builder\">\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"@PROJECT_PATH@/assets/images/netease-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 8\">\n                <img src=\"@PROJECT_PATH@/assets/images/ta-press-0019-youtube-1.png-2-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 9\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 10\">\n                <img src=\"@PROJECT_PATH@/assets/images/xpeng-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 11\">\n                <img src=\"@PROJECT_PATH@/assets/images/oppo-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 12\">\n                <img src=\"@PROJECT_PATH@/assets/images/nike-1-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 13\">\n                <img src=\"@PROJECT_PATH@/assets/images/herschel-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 14\">\n                <img src=\"@PROJECT_PATH@/assets/images/levis-1-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 15\">\n                <img src=\"@PROJECT_PATH@/assets/images/spotify-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 16\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 17\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 18\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 19\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 20\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 21\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 22\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 23\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 24\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n        \n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "clients1-c0",
+          "_isUserblock": true,
+          "_cid": "tEejXexUUS",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            },
+            ".mbr-description": {
+              "color": "#bbbbbb"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/cton2022-brochure-16nov-page-30.jpeg\" alt>\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Event Partners</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image3-bz",
+          "_isUserblock": true,
+          "_cid": "tEejeXmMQt",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            },
+            ".mbr-description": {
+              "color": "#bbbbbb"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/cton2022-brochure-16nov-page-31.jpeg\" alt>\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Event Partners</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image3-ar",
+          "_isUserblock": true,
+          "_cid": "tonDwWgv76",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
             "& when (@bg-type = 'color')": {
@@ -4856,10 +5083,12 @@
           },
           "_name": "features17",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features16\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#000000\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3-1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://www.bilibili.com/video/BV1nS4y1x7Yp?spm_id_from=333.999.0.0&vd_source=d2fd9a3f669d9f519590bb0a84d66c09&t=18.8\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#4e4e4e\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <a href=\"http://xhslink.com/8nHXxo\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/loadout-drop-cton-express.jpeg\" alt></a>\n                    </div>\n                </div>\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>涂鸦狂魔｜电矩列车</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">联合涂鸦艺术家 REVOS、TAKEN、DALE 与 BDMG涂鸦公园 ，电矩狂魔™ 融合电矩列车和柏林涂鸦文化，在2023年准备为公众带来一系列特别的作品。<br></p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-white-outline\" href=\"http://xhslink.com/8nHXxo\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"mobi-mbri mobi-mbri-info mbr-iconfont mbr-iconfont-btn\"></span>Info 详情</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features16\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#000000\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3-1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://www.bilibili.com/video/BV1nS4y1x7Yp?spm_id_from=333.999.0.0&vd_source=d2fd9a3f669d9f519590bb0a84d66c09&t=18.8\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#4e4e4e\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    \n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <a href=\"http://xhslink.com/8nHXxo\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/loadout-drop-cton-express.jpeg\" alt></a>\n                    </div>\n                </div>\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>涂鸦狂魔｜电矩列车</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">联合涂鸦艺术家 REVOS、TAKEN、DALE 与 BDMG涂鸦公园 ，电矩狂魔™ 融合电矩列车和柏林涂鸦文化，在2023年准备为公众带来一系列特别的作品。<br></p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-white-outline\" href=\"http://xhslink.com/8nHXxo\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"mobi-mbri mobi-mbri-info mbr-iconfont mbr-iconfont-btn\"></span>Info 详情</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "features17-7a",
           "_isUserblock": true,
           "_cid": "taS72c5HH8",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -4992,172 +5221,6 @@
           "_cid": "tcBex8GzGW",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            "img": {
-              "width": "120px",
-              "margin": "auto"
-            },
-            ".card": {
-              "transition": "all 0.3s",
-              "height": "fit-content",
-              "padding": "1rem 0",
-              "opacity": "0.7",
-              "margin-bottom": "1rem"
-            },
-            "@media (min-width: 992px)": {
-              ".card": {
-                "max-width": "10%"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".card": {
-                "width": "50%!important"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#bbbbbb"
-            }
-          },
-          "_name": "clients1",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"clients1\" group=\"Clients\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"24\" value=\"15\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Brand Partners</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">For a better look, use pictures of the same size in this block.\n                elit</h4>\n            <p class=\"mbr-text mbr-fonts-style align-center mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                Click on an image in this block to replace it. Set the number of logos in Block Parameters. </p>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"col-md-3 card\">\n                <img src=\"@PROJECT_PATH@/assets/images/ta-press-0016-layer-3-2-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"@PROJECT_PATH@/assets/images/discovery-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"@PROJECT_PATH@/assets/images/nsm-1.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"@PROJECT_PATH@/assets/images/cdp-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"@PROJECT_PATH@/assets/images/tencent-music-300x300.png\" alt=\"Mobirise Website Builder\">\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"@PROJECT_PATH@/assets/images/takara-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"@PROJECT_PATH@/assets/images/spotify-1-240x240.png\" alt=\"Mobirise Website Builder\">\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"@PROJECT_PATH@/assets/images/netease-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 8\">\n                <img src=\"@PROJECT_PATH@/assets/images/ta-press-0019-youtube-1.png-2-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 9\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 10\">\n                <img src=\"@PROJECT_PATH@/assets/images/xpeng-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 11\">\n                <img src=\"@PROJECT_PATH@/assets/images/oppo-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 12\">\n                <img src=\"@PROJECT_PATH@/assets/images/nike-1-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 13\">\n                <img src=\"@PROJECT_PATH@/assets/images/herschel-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 14\">\n                <img src=\"@PROJECT_PATH@/assets/images/levis-1-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 15\">\n                <img src=\"@PROJECT_PATH@/assets/images/spotify-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 16\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 17\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 18\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 19\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 20\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 21\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 22\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 23\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 24\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n        \n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "clients1-bx",
-          "_isUserblock": true,
-          "_cid": "tEeiwOFegT",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "background-color": "@bgColor",
-            "img": {
-              "width": "120px",
-              "margin": "auto"
-            },
-            ".card": {
-              "transition": "all 0.3s",
-              "height": "fit-content",
-              "padding": "1rem 0",
-              "opacity": "0.7",
-              "margin-bottom": "1rem"
-            },
-            "@media (min-width: 992px)": {
-              ".card": {
-                "max-width": "10%"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".card": {
-                "width": "50%!important"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#bbbbbb"
-            }
-          },
-          "_name": "clients1",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"clients1\" group=\"Clients\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"24\" value=\"1\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Event Partners</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">For a better look, use pictures of the same size in this block.\n                elit</h4>\n            <p class=\"mbr-text mbr-fonts-style align-center mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                Click on an image in this block to replace it. Set the number of logos in Block Parameters. </p>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"col-md-3 card\">\n                <img src=\"@PROJECT_PATH@/assets/images/cton-expo-wht-bg.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"@PROJECT_PATH@/assets/images/cton-express-outline-wht.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"@PROJECT_PATH@/assets/images/cfos-campus-wht.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"@PROJECT_PATH@/assets/images/on-air-by-cton-outline-wht.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"@PROJECT_PATH@/assets/images/tencent-music-300x300.png\" alt=\"Mobirise Website Builder\">\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"@PROJECT_PATH@/assets/images/takara-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"@PROJECT_PATH@/assets/images/spotify-1-240x240.png\" alt=\"Mobirise Website Builder\">\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"@PROJECT_PATH@/assets/images/netease-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 8\">\n                <img src=\"@PROJECT_PATH@/assets/images/ta-press-0019-youtube-1.png-2-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 9\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 10\">\n                <img src=\"@PROJECT_PATH@/assets/images/xpeng-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 11\">\n                <img src=\"@PROJECT_PATH@/assets/images/oppo-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 12\">\n                <img src=\"@PROJECT_PATH@/assets/images/nike-1-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 13\">\n                <img src=\"@PROJECT_PATH@/assets/images/herschel-1-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 14\">\n                <img src=\"@PROJECT_PATH@/assets/images/levis-1-300x300.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 15\">\n                <img src=\"@PROJECT_PATH@/assets/images/spotify-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 16\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 17\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 18\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 19\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 20\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 21\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 22\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 23\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n            <div class=\"col-md-3 card\" mbr-if=\"items > 24\">\n                <img src=\"@PROJECT_PATH@/assets/images/bilibili-240x240.png\" alt>\n            </div>\n\n        \n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "clients1-c0",
-          "_isUserblock": true,
-          "_cid": "tEejXexUUS",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "@media (max-width: 991px)": {
-              ".image-wrapper": {
-                "margin-bottom": "1rem"
-              }
-            },
-            ".row": {
-              "flex-direction": "row-reverse"
-            },
-            "img": {
-              "width": "100%"
-            },
-            ".mbr-description": {
-              "color": "#bbbbbb"
-            }
-          },
-          "_name": "image3",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/cton2022-brochure-16nov-page-30.jpeg\" alt>\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Event Partners</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "image3-bz",
-          "_isUserblock": true,
-          "_cid": "tEejeXmMQt",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "@media (max-width: 991px)": {
-              ".image-wrapper": {
-                "margin-bottom": "1rem"
-              }
-            },
-            ".row": {
-              "flex-direction": "row-reverse"
-            },
-            "img": {
-              "width": "100%"
-            },
-            ".mbr-description": {
-              "color": "#bbbbbb"
-            }
-          },
-          "_name": "image3",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/cton2022-brochure-16nov-page-31.jpeg\" alt>\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Event Partners</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "image3-ar",
-          "_isUserblock": true,
-          "_cid": "tonDwWgv76",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -13783,10 +13846,12 @@
           },
           "_name": "content5",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\"><b>电矩狂魔CTON</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-4\"><b>&gt; exhibitions</b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\"><b>电矩狂魔CTON</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-4\"><b>&gt; exhibitions</b></p>\n            </div>\n        </div>\n    </div>\n    <div style=\"position: relative; padding: 30% 45%;\">\n<iframe style=\"position: absolute; width: 100%; height: 100%; left: 0; top: 0;\" src=\"https://player.bilibili.com/player.html?aid=698990316&bvid=BV1Qm4y1t73f&cid=1140147094&page=1&as_wide=1&high_quality=1&danmaku=0\" frameborder=\"no\" scrolling=\"no\"></iframe>\n    </div> \n</section>",
           "_anchor": "content5-7p",
           "_isUserblock": true,
           "_cid": "tbCHeBAhLM",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -13836,7 +13901,7 @@
           },
           "_name": "image1",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\">\n            <input type=\"video\" title=\"Video\" value=\"https://player.bilibili.com/player.html?aid=911466168&bvid=BV1wM4y1B7JB&cid=1139517630&page=1\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/cton-logo-clean-1076x361.png\" alt>\n                    <p class=\"mbr-description mbr-fonts-style pt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">汽车前杠，专利号202130827550.1；汽车侧裙，专利号202130827550.2；汽车后小包，专利号202130827550.3</p>\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>电矩狂魔™ CTON</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">在2022年，电矩狂魔通过结合艺术与餐饮场所，在中国核心商圈小规模地进行了一场商业实验。融合夜生活与艺术展览，电矩狂魔以“夜间展览”的理念与广州、深圳中心地段的夜店、鸡尾酒吧与咖啡馆展开合作，以渗透城市景观，成为人们文化生活图景的一部分的方式。<br><br>Since 2022, 电矩狂魔™ CTON has initiated a series of commercial experiments across China's most central districts. 电矩狂魔™ CTON is a celebration of nightlife and contemporary art, a cultural symbol across galleries, clubs, cocktail bars, auto shops, and cafes, bringing a brand new dynamic art experience to the audience.&nbsp;</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Description\" name=\"showDescription\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://player.bilibili.com/player.html?aid=698990316&bvid=BV1Qm4y1t73f&cid=1140147094&page=1&as_wide=1&high_quality=1&danmaku=0\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row align-items-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/cton-logo-clean-1076x361.png\" alt>\n                    <p class=\"mbr-description mbr-fonts-style pt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showDescription\" data-app-selector=\".mbr-description\">汽车前杠，专利号202130827550.1；汽车侧裙，专利号202130827550.2；汽车后小包，专利号202130827550.3</p>\n                </div>\n            </div>\n            <div class=\"col-12\" mbr-class=\"{'col-lg' : !fullWidth, 'col-lg-4' : fullWidth &amp;&amp; textWidth >= 6, 'col-lg-6' : fullWidth &amp;&amp; textWidth <= 5}\">\n                <div class=\"text-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>电矩狂魔™ CTON</b></h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">在2022年，电矩狂魔通过结合艺术与餐饮场所，在中国核心商圈小规模地进行了一场商业实验。融合夜生活与艺术展览，电矩狂魔以“夜间展览”的理念与广州、深圳中心地段的夜店、鸡尾酒吧与咖啡馆展开合作，以渗透城市景观，成为人们文化生活图景的一部分的方式。<br><br>Since 2022, 电矩狂魔™ CTON has initiated a series of commercial experiments across China's most central districts. 电矩狂魔™ CTON is a celebration of nightlife and contemporary art, a cultural symbol across galleries, clubs, cocktail bars, auto shops, and cafes, bringing a brand new dynamic art experience to the audience.&nbsp;</p>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
           "_anchor": "image1-7r",
           "_isUserblock": true,
           "_cid": "tbCIvMcs7P",
@@ -13972,59 +14037,6 @@
           "_anchor": "gallery3-b8",
           "_isUserblock": true,
           "_cid": "tsYKPcDonQ",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".content-wrapper": {
-              "background": "@cardColor",
-              "@media (max-width: 991px)": {
-                ".image-wrapper": {
-                  "margin-bottom": "2rem"
-                }
-              },
-              "@media (max-width: 767px)": {
-                "padding": "1rem"
-              },
-              "@media (min-width: 768px) and (max-width: 991px)": {
-                "padding": "2rem"
-              },
-              "@media (min-width: 992px)": {
-                "padding": "5rem 3rem",
-                ".text-wrapper": {
-                  "padding-left": "2rem"
-                }
-              }
-            },
-            ".image-wrapper img": {
-              "width": "100%",
-              "object-fit": "cover"
-            },
-            ".card-title": {
-              "color": "#ffffff"
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "color": "#bbbbbb"
-            }
-          },
-          "_name": "features17",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features16\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#000000\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3-1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://www.bilibili.com/video/BV1nS4y1x7Yp?spm_id_from=333.999.0.0&vd_source=d2fd9a3f669d9f519590bb0a84d66c09&t=18.8\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#4e4e4e\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"content-wrapper\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-12 col-lg-{{imageWidth}}\">\n                    <div class=\"image-wrapper\">\n                        <a href=\"https://ra.co/events/1672497\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/artboard-3-large.jpeg\" alt=\"海湾风云KRAXY BAJA｜电矩狂魔CTON特别活动\"></a>\n                    </div>\n                </div>\n                <div class=\"col-12 col-lg\">\n                    <div class=\"text-wrapper\">\n                        <h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>海湾风云KRAXY BAJA｜电矩狂魔CTON特别活动</b></h6>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">联合 KRAXY BAJA，电矩狂魔CTON 为 KRAXY BAJA 的忠实粉丝共同策划其最后一期海边派对。<br><br>作为拥有长期派对策划历史的KRAXY BAJA，自2012年起便拥有广泛的外国友人参与，为远在他乡的拼搏者们带来了一个又一个难忘的派对。<br><br>在这次温馨的告别，我们将搭乘 电矩列车（CTON EXPRESS），重返中国境内最大的沙滩俱乐部—MOOON BEACH CLUB，一起追溯那个欢声笑语、莫逆之交的美好时代。<br><br>CTON and KRAXY BAJA are excited to announce a farewell party from MARCH 31st to APRIL 1st, for KRAXY BAJA's most loyal fans.<br><br>KRAXY BAJA, a sophisticated collective of amazing musicians. Since 2012, KRAXY BAJA parties have become a welcoming family shelter for expats, creating numerous unforgettable memories, celebrating the tears and joys of those far far away from home.<br><br>At this epic farewell, people are brought together again at MOOON BEACH CLUB, the largest beach club in China, salute to the beautiful friendships of an era of great wonders and dreams.<br></p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-white-outline\" href=\"https://ra.co/events/1672497\" data-app-placeholder=\"Type Text\" target=\"_blank\"><span class=\"mobi-mbri mobi-mbri-info mbr-iconfont mbr-iconfont-btn\"></span>Info 详情</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "features17-br",
-          "_isUserblock": true,
-          "_cid": "tyoFSUefRv",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
